@@ -27,7 +27,8 @@
         ]
       }
     ],
-    "filenames/match-regex": [2, "^[A-Z]+[A-z]*", true]
+    "filenames/match-regex": [2, "^[A-Z]+[A-z]*", true],
+    "jsx-a11y/media-has-caption": [0]
   },
   "env": {
     "browser": true
