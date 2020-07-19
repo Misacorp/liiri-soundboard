@@ -3,15 +3,19 @@
  */
 export default [
   {
-    name: 'Buzzer',
-    filename: 'buzzer.ogg',
+    name: 'Noni',
+    filename: 'noni.ogg',
   },
   {
-    name: 'Rooster',
-    filename: 'rooster.ogg',
+    name: 'Tuuletus',
+    filename: 'tuuletus.ogg',
   },
   {
     name: 'Pelokas nauru',
     filename: 'fearful_laugh.ogg',
+  },
+  {
+    name: 'Semihyvin',
+    filename: 'semihyvin.ogg',
   },
 ];

@@ -40,8 +40,6 @@ const SoundButtonStructure = ({ sound, className }) => {
   return (
     <Button className={className} onPress={play} accent={accent}>
       {sound.name}
-      {' - '}
-      {playState}
     </Button>
   );
 };
