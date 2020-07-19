@@ -19,7 +19,26 @@ const SoundboardStructure = ({ className }) => {
   );
 };
 
-const Soundboard = styled(SoundboardStructure)``;
+const Soundboard = styled(SoundboardStructure)`
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+
+  ::before {
+    content: '';
+    width: 0;
+    padding-bottom: 100%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
+
+  & > :first-child {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
+`;
 
 SoundboardStructure.propTypes = {
   className: PropTypes.string,

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import styled from 'styled-components/macro';
 import PropTypes from 'prop-types';
 
-import Button from '../generic/button/Button';
+import Button, { accents } from '../generic/button/Button';
 
 import Sound from '../../types/Sound';
 import { PLAYING, STOPPED } from '../../constants/playStates';
@@ -35,18 +35,21 @@ const SoundButtonStructure = ({ sound, className }) => {
     return () => audio.removeEventListener('ended', stop);
   }, [audio, stop]);
 
+  const accent = playState === PLAYING ? accents.GREEN : accents.ORANGE;
+
   return (
-    <div>
-      <Button className={className} onPress={play}>
-        {sound.name}
-        {' - '}
-        {playState}
-      </Button>
-    </div>
+    <Button className={className} onPress={play} accent={accent}>
+      {sound.name}
+      {' - '}
+      {playState}
+    </Button>
   );
 };
 
-const SoundButton = styled(SoundButtonStructure)``;
+const SoundButton = styled(SoundButtonStructure)`
+  width: 100%;
+  height: 100%;
+`;
 
 SoundButtonStructure.propTypes = {
   sound: PropTypes.instanceOf(Sound).isRequired,

@@ -10,4 +10,8 @@ export default [
     name: 'Rooster',
     filename: 'rooster.ogg',
   },
+  {
+    name: 'Pelokas nauru',
+    filename: 'fearful_laugh.ogg',
+  },
 ];

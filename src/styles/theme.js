@@ -1,4 +1,5 @@
 const baseFonts = [
+  'Jockey One',
   'Open Sans',
   'Roboto',
   'Helvetica Neue',
@@ -28,6 +29,28 @@ export default {
       main: '#139B92',
       dark: '#018279',
       darker: '#00675F',
+    },
+    obsidian: {
+      mainHighlight: '#3a383e',
+      main: '#343238',
+      dark: '#242128',
+    },
+    green: {
+      lighter: '#57C0B8',
+      light: '#31A89F',
+      main: '#139B92',
+      dark: '#018279',
+      darker: '#00675F',
+    },
+    orange: {
+      lighter: '#FFCF74',
+      light: '#FFC14A',
+      main: '#FDB01F',
+      dark: '#D48C02',
+      darker: '#A76D00',
+    },
+    typography: {
+      light: '#fefefe',
     },
   },
   typography: {
